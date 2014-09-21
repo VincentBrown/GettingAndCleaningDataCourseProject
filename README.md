@@ -2,7 +2,7 @@ GettingAndCleaningDataCourseProject
 ===================================
 The script run_analysis.R reads data from the folders in the UCI Dataset and tidies them.  The steps are:
 
-1. read the features from "features.txt". These are the variable names and will be the column names of the data frames we create
+1. read the features from "features.txt". These are the variable names and will be the column names of the data frames we create. Run gsub to fix a typo where "BodyBody" is sometimes written instead of "Body."
 2. read the activity labels from "activity_labels.txt"  We will use these to replace the 1 to 6 values of the values with the labels.
 3. read in the test data from the test folder.  Use read.table to read in:
 	- "X_text.txt" which are the measurements of the features for each observation. Data frame is Test_data.
